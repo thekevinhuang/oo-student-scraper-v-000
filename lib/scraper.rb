@@ -36,8 +36,8 @@ class Scraper
 
     social_urls = profile.css("div.social-icon-container a").collect do |url|
       url.text
+      binding.pry
     end
-    binding.pry
 
     #profile quote
     #div.profile_quote.text
